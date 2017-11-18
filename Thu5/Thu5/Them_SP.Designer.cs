@@ -31,20 +31,22 @@
             this.bt_huy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bt_ok = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txt_soluong = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_MASP = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_mota = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cbb_tinhtrang = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.date_ngaynhap = new System.Windows.Forms.DateTimePicker();
+            this.txt_gia = new System.Windows.Forms.TextBox();
+            this.txt_hang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_TenSP = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -58,6 +60,7 @@
             this.bt_huy.TabIndex = 70;
             this.bt_huy.Text = "Hủy";
             this.bt_huy.UseVisualStyleBackColor = true;
+            this.bt_huy.Click += new System.EventHandler(this.bt_huy_Click);
             // 
             // panel1
             // 
@@ -76,13 +79,14 @@
             this.bt_ok.TabIndex = 71;
             this.bt_ok.Text = "OK";
             this.bt_ok.UseVisualStyleBackColor = true;
+            this.bt_ok.Click += new System.EventHandler(this.bt_ok_Click);
             // 
-            // textBox7
+            // txt_soluong
             // 
-            this.textBox7.Location = new System.Drawing.Point(388, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(162, 20);
-            this.textBox7.TabIndex = 13;
+            this.txt_soluong.Location = new System.Drawing.Point(388, 24);
+            this.txt_soluong.Name = "txt_soluong";
+            this.txt_soluong.Size = new System.Drawing.Size(162, 20);
+            this.txt_soluong.TabIndex = 13;
             // 
             // label7
             // 
@@ -93,13 +97,6 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Số lượng:";
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(388, 52);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(162, 20);
-            this.textBox6.TabIndex = 11;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -109,12 +106,12 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Ngày nhập:";
             // 
-            // textBox5
+            // txt_MASP
             // 
-            this.textBox5.Location = new System.Drawing.Point(96, 24);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(96, 20);
-            this.textBox5.TabIndex = 9;
+            this.txt_MASP.Location = new System.Drawing.Point(96, 24);
+            this.txt_MASP.Name = "txt_MASP";
+            this.txt_MASP.Size = new System.Drawing.Size(96, 20);
+            this.txt_MASP.TabIndex = 9;
             // 
             // label5
             // 
@@ -125,13 +122,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Mã sản phẩm:";
             // 
-            // textBox4
+            // txt_mota
             // 
-            this.textBox4.Location = new System.Drawing.Point(96, 130);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(454, 91);
-            this.textBox4.TabIndex = 7;
+            this.txt_mota.Location = new System.Drawing.Point(96, 130);
+            this.txt_mota.Multiline = true;
+            this.txt_mota.Name = "txt_mota";
+            this.txt_mota.Size = new System.Drawing.Size(454, 91);
+            this.txt_mota.TabIndex = 7;
             // 
             // label4
             // 
@@ -153,19 +150,21 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.cbb_tinhtrang);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.date_ngaynhap);
+            this.groupBox2.Controls.Add(this.txt_soluong);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txt_MASP);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.txt_mota);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.txt_gia);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txt_hang);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txt_TenSP);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
@@ -174,19 +173,47 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin sản phẩm:";
             // 
-            // textBox3
+            // cbb_tinhtrang
             // 
-            this.textBox3.Location = new System.Drawing.Point(96, 104);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 5;
+            this.cbb_tinhtrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb_tinhtrang.FormattingEnabled = true;
+            this.cbb_tinhtrang.Items.AddRange(new object[] {
+            "Mới",
+            "Cũ"});
+            this.cbb_tinhtrang.Location = new System.Drawing.Point(388, 79);
+            this.cbb_tinhtrang.Name = "cbb_tinhtrang";
+            this.cbb_tinhtrang.Size = new System.Drawing.Size(121, 21);
+            this.cbb_tinhtrang.TabIndex = 16;
             // 
-            // textBox2
+            // label8
             // 
-            this.textBox2.Location = new System.Drawing.Point(96, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(96, 20);
-            this.textBox2.TabIndex = 3;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(304, 85);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Tình trạng:";
+            // 
+            // date_ngaynhap
+            // 
+            this.date_ngaynhap.Location = new System.Drawing.Point(388, 53);
+            this.date_ngaynhap.Name = "date_ngaynhap";
+            this.date_ngaynhap.Size = new System.Drawing.Size(162, 20);
+            this.date_ngaynhap.TabIndex = 14;
+            // 
+            // txt_gia
+            // 
+            this.txt_gia.Location = new System.Drawing.Point(96, 104);
+            this.txt_gia.Name = "txt_gia";
+            this.txt_gia.Size = new System.Drawing.Size(162, 20);
+            this.txt_gia.TabIndex = 5;
+            // 
+            // txt_hang
+            // 
+            this.txt_hang.Location = new System.Drawing.Point(96, 78);
+            this.txt_hang.Name = "txt_hang";
+            this.txt_hang.Size = new System.Drawing.Size(96, 20);
+            this.txt_hang.TabIndex = 3;
             // 
             // label2
             // 
@@ -197,12 +224,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Hãng:";
             // 
-            // textBox1
+            // txt_TenSP
             // 
-            this.textBox1.Location = new System.Drawing.Point(96, 52);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_TenSP.Location = new System.Drawing.Point(96, 52);
+            this.txt_TenSP.Name = "txt_TenSP";
+            this.txt_TenSP.Size = new System.Drawing.Size(162, 20);
+            this.txt_TenSP.TabIndex = 1;
             // 
             // label1
             // 
@@ -222,6 +249,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "Them_SP";
             this.Text = "Thêm sản phẩm";
+            this.Load += new System.EventHandler(this.Them_SP_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
@@ -234,20 +262,22 @@
         private System.Windows.Forms.Button bt_huy;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button bt_ok;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txt_soluong;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_MASP;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_mota;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_gia;
+        private System.Windows.Forms.TextBox txt_hang;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_TenSP;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker date_ngaynhap;
+        private System.Windows.Forms.ComboBox cbb_tinhtrang;
+        private System.Windows.Forms.Label label8;
     }
 }

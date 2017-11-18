@@ -17,7 +17,13 @@ namespace Thu5
         {
             InitializeComponent();
         }
+        public string tendangnhap
+        {
+            get { return lblThongBao.Text; }
+        }
         SqlConnection con = DBConnecter.sqlConnector();
+        private FormClosedEventHandler dangky_FormClosed;
+
         private void DangNhap_Load(object sender, EventArgs e)
         {
             con.Open();
@@ -25,8 +31,14 @@ namespace Thu5
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             DangKy dangky = new DangKy();
+            dangky.FormClosed += new FormClosedEventHandler(dangky_formclosed);
             dangky.Show();
-            this.Close();
+            this.Hide();
+        }
+
+        private void dangky_formclosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -48,10 +60,32 @@ namespace Thu5
                 SqlDataAdapter da2 = new SqlDataAdapter(com2);
                 DataTable dt2 = new DataTable();
                 da2.Fill(dt2);
-
                 if(dt.Rows[0][0].ToString() == "1")
                 {
                     lblThongBao.Text = "Xin chào: "+ dt2.Rows[0][0].ToString();
+                    if(txtTenDangNhap.Text=="admin")
+                    {
+                        QuanLySP quanly = new QuanLySP();
+                        quanly.xinchao = tendangnhap;
+                        quanly.FormClosed += new FormClosedEventHandler(quanly_formclosed);
+                        quanly.Show();
+                        txtTenDangNhap.Clear();
+                        txtMatKhau.Clear();
+                        lblThongBao.Text = "";
+                        this.Hide();
+                        
+                    }
+                    else
+                    {
+                        QLBanHang quanly = new QLBanHang();
+                        quanly.xinchao = tendangnhap;
+                        quanly.FormClosed += new FormClosedEventHandler(quanly_formclosed);
+                        quanly.Show();
+                        txtTenDangNhap.Clear();
+                        txtMatKhau.Clear();
+                        lblThongBao.Text = "";
+                        this.Hide();
+                    }
                 }
                 else
                 {
@@ -65,6 +99,11 @@ namespace Thu5
                 MessageBox.Show("Lỗi kết nối database.", "Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             //this.Close();
+        }
+
+        private void quanly_formclosed(object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
 
         private void txtTenDangNhap_Enter(object sender, EventArgs e)
