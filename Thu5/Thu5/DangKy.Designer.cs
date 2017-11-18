@@ -91,6 +91,7 @@
             this.txt_rmk.Name = "txt_rmk";
             this.txt_rmk.Size = new System.Drawing.Size(204, 20);
             this.txt_rmk.TabIndex = 39;
+            this.txt_rmk.UseSystemPasswordChar = true;
             // 
             // txt_mk
             // 
@@ -99,6 +100,7 @@
             this.txt_mk.Name = "txt_mk";
             this.txt_mk.Size = new System.Drawing.Size(204, 20);
             this.txt_mk.TabIndex = 38;
+            this.txt_mk.UseSystemPasswordChar = true;
             // 
             // txt_tendn
             // 

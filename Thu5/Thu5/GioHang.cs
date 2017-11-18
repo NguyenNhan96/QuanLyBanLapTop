@@ -24,12 +24,18 @@ namespace Thu5
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cap nhat gio hang thanh cong!");
+            MessageBox.Show("Cập nhật giỏ hàng thành công!");
         }
 
         private void GioHang_Load(object sender, EventArgs e)
         {
             dataGioHang.Rows.Add("1","Asus 540XL", "10.499.000","1", "10.499.000");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đơn hàng đã được gửi. Cửa hàng sẽ liên lạc với bạn ngay!");
+
         }
     }
 }

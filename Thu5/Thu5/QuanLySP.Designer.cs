@@ -207,7 +207,7 @@
             this.groupBox2.Size = new System.Drawing.Size(745, 323);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Danh sách nhân viên: ";
+            this.groupBox2.Text = "Danh sách sản phẩm:";
             // 
             // data_DSSP
             // 
