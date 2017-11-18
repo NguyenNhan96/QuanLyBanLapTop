@@ -20,8 +20,7 @@ namespace Thu5
         private void QuanLySP_Load(object sender, EventArgs e)
         {
 
-            dataDSSP.Rows.Add("AS540", "Asus 540XL", "Asus", "25/07/2017", "10.499.000","Ram 4G, .....", "img");
-            dataDSSP.Rows.Add("AS450", "Asus 450XL", "Asus", "20/05/2017", "10.000.000", "Ram 4G, .....", "img");
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,9 +45,6 @@ namespace Thu5
             MessageBox.Show("Xoa san pham thanh cong!");
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }

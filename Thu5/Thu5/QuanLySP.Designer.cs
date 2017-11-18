@@ -28,215 +28,285 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_xinchao = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataDSSP = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bt_edit = new System.Windows.Forms.Button();
+            this.bt_add = new System.Windows.Forms.Button();
+            this.bt_delete = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.cbb_hang = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Hang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThongTin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HinhAnh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bt_thoat = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDSSP)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // panel1
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Asus",
-            "Dell",
-            "Hp"});
-            this.comboBox1.Location = new System.Drawing.Point(216, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.Text = "Hãng";
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(84, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(589, 40);
+            this.panel1.TabIndex = 28;
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(690, 376);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 31);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Đóng";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Sienna;
+            this.label1.Location = new System.Drawing.Point(32, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(525, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "CHÀO MỪNG ĐẾN VỚI HỆ THỐNG QUẢN LÝ BÁN LAPTOP";
+            // 
+            // lb_xinchao
+            // 
+            this.lb_xinchao.AutoSize = true;
+            this.lb_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_xinchao.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lb_xinchao.Location = new System.Drawing.Point(655, 55);
+            this.lb_xinchao.Name = "lb_xinchao";
+            this.lb_xinchao.Size = new System.Drawing.Size(111, 16);
+            this.lb_xinchao.TabIndex = 29;
+            this.lb_xinchao.Text = "Xin chào quản lý !";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.dataDSSP);
-            this.groupBox1.Location = new System.Drawing.Point(9, 42);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 74);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(768, 328);
-            this.groupBox1.TabIndex = 25;
+            this.groupBox1.Size = new System.Drawing.Size(760, 391);
+            this.groupBox1.TabIndex = 30;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Danh sách nhân viên: ";
             // 
-            // button4
+            // panel2
             // 
-            this.button4.BackgroundImage = global::Thu5.Properties.Resources.if_081_Pen_183209;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.Location = new System.Drawing.Point(666, 9);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(28, 26);
-            this.button4.TabIndex = 12;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.panel2.Controls.Add(this.bt_edit);
+            this.panel2.Controls.Add(this.bt_add);
+            this.panel2.Controls.Add(this.bt_delete);
+            this.panel2.Location = new System.Drawing.Point(645, 14);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(109, 38);
+            this.panel2.TabIndex = 13;
             // 
-            // button2
+            // bt_edit
             // 
-            this.button2.BackgroundImage = global::Thu5.Properties.Resources.if_list_add_118777;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(700, 9);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(27, 26);
-            this.button2.TabIndex = 11;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.bt_edit.BackgroundImage = global::Thu5.Properties.Resources.if_081_Pen_183209;
+            this.bt_edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bt_edit.Location = new System.Drawing.Point(6, 6);
+            this.bt_edit.Name = "bt_edit";
+            this.bt_edit.Size = new System.Drawing.Size(28, 26);
+            this.bt_edit.TabIndex = 15;
+            this.bt_edit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bt_add
             // 
-            this.button3.BackgroundImage = global::Thu5.Properties.Resources.if_basket_1814090;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.Location = new System.Drawing.Point(733, 9);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 26);
-            this.button3.TabIndex = 10;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bt_add.BackgroundImage = global::Thu5.Properties.Resources.if_list_add_118777;
+            this.bt_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bt_add.Location = new System.Drawing.Point(40, 6);
+            this.bt_add.Name = "bt_add";
+            this.bt_add.Size = new System.Drawing.Size(27, 26);
+            this.bt_add.TabIndex = 14;
+            this.bt_add.UseVisualStyleBackColor = true;
             // 
-            // dataDSSP
+            // bt_delete
             // 
-            this.dataDSSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataDSSP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaSP,
-            this.TenSP,
-            this.Hang,
-            this.NgayNhap,
-            this.DonGia,
-            this.ThongTin,
-            this.HinhAnh});
-            this.dataDSSP.Location = new System.Drawing.Point(6, 41);
-            this.dataDSSP.Name = "dataDSSP";
-            this.dataDSSP.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataDSSP.Size = new System.Drawing.Size(756, 281);
-            this.dataDSSP.TabIndex = 0;
+            this.bt_delete.BackgroundImage = global::Thu5.Properties.Resources.if_basket_1814090;
+            this.bt_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bt_delete.Location = new System.Drawing.Point(73, 6);
+            this.bt_delete.Name = "bt_delete";
+            this.bt_delete.Size = new System.Drawing.Size(30, 26);
+            this.bt_delete.TabIndex = 13;
+            this.bt_delete.UseVisualStyleBackColor = true;
             // 
-            // MaSP
+            // panel3
             // 
-            this.MaSP.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MaSP.Frozen = true;
-            this.MaSP.HeaderText = "Mã sản phẩm";
-            this.MaSP.Name = "MaSP";
-            this.MaSP.Width = 96;
+            this.panel3.Controls.Add(this.txt_timkiem);
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.cbb_hang);
+            this.panel3.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel3.Location = new System.Drawing.Point(6, 14);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(400, 38);
+            this.panel3.TabIndex = 29;
             // 
-            // TenSP
+            // txt_timkiem
             // 
-            this.TenSP.Frozen = true;
-            this.TenSP.HeaderText = "Tên sản phẩm";
-            this.TenSP.Name = "TenSP";
-            // 
-            // Hang
-            // 
-            this.Hang.Frozen = true;
-            this.Hang.HeaderText = "Hãng";
-            this.Hang.Name = "Hang";
-            // 
-            // NgayNhap
-            // 
-            this.NgayNhap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.NgayNhap.Frozen = true;
-            this.NgayNhap.HeaderText = "Ngày nhập";
-            this.NgayNhap.Name = "NgayNhap";
-            // 
-            // DonGia
-            // 
-            this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DonGia.HeaderText = "Đơn giá";
-            this.DonGia.Name = "DonGia";
-            // 
-            // ThongTin
-            // 
-            this.ThongTin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ThongTin.HeaderText = "Thông tin";
-            this.ThongTin.Name = "ThongTin";
-            // 
-            // HinhAnh
-            // 
-            this.HinhAnh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HinhAnh.HeaderText = "Hình ảnh";
-            this.HinhAnh.Name = "HinhAnh";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 28;
-            this.textBox1.Text = "Nhap ten san pham";
+            this.txt_timkiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_timkiem.Location = new System.Drawing.Point(3, 8);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(220, 20);
+            this.txt_timkiem.TabIndex = 27;
+            this.txt_timkiem.Text = "Nhập tên sản phẩm cần tìm kiếm";
             // 
             // button5
             // 
             this.button5.BackgroundImage = global::Thu5.Properties.Resources.if_system_search_118797;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(343, 11);
+            this.button5.Location = new System.Drawing.Point(356, 6);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(43, 23);
-            this.button5.TabIndex = 29;
+            this.button5.Size = new System.Drawing.Size(31, 26);
+            this.button5.TabIndex = 26;
             this.button5.UseVisualStyleBackColor = true;
+            // 
+            // cbb_hang
+            // 
+            this.cbb_hang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbb_hang.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cbb_hang.FormattingEnabled = true;
+            this.cbb_hang.Items.AddRange(new object[] {
+            "Asus",
+            "Dell",
+            "HP"});
+            this.cbb_hang.Location = new System.Drawing.Point(229, 7);
+            this.cbb_hang.Name = "cbb_hang";
+            this.cbb_hang.Size = new System.Drawing.Size(121, 21);
+            this.cbb_hang.TabIndex = 25;
+            this.cbb_hang.Text = "Hãng";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Location = new System.Drawing.Point(9, 62);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(745, 323);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Danh sách nhân viên: ";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaSP,
+            this.TenSP,
+            this.Hang,
+            this.DonGia,
+            this.SoLuong,
+            this.NgayNhap,
+            this.MoTa});
+            this.dataGridView1.Location = new System.Drawing.Point(12, 19);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(727, 298);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // MaSP
+            // 
+            this.MaSP.HeaderText = "Mã sản phẩm";
+            this.MaSP.Name = "MaSP";
+            this.MaSP.Width = 75;
+            // 
+            // TenSP
+            // 
+            this.TenSP.HeaderText = "Tên sản phẩm";
+            this.TenSP.Name = "TenSP";
+            this.TenSP.Width = 125;
+            // 
+            // Hang
+            // 
+            this.Hang.HeaderText = "Hãng";
+            this.Hang.Name = "Hang";
+            this.Hang.Width = 75;
+            // 
+            // DonGia
+            // 
+            this.DonGia.HeaderText = "Đơn giá";
+            this.DonGia.Name = "DonGia";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.HeaderText = "Số lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 75;
+            // 
+            // NgayNhap
+            // 
+            this.NgayNhap.HeaderText = "Ngày nhập";
+            this.NgayNhap.Name = "NgayNhap";
+            // 
+            // MoTa
+            // 
+            this.MoTa.HeaderText = "Mô tả";
+            this.MoTa.Name = "MoTa";
+            this.MoTa.Width = 200;
+            // 
+            // bt_thoat
+            // 
+            this.bt_thoat.Location = new System.Drawing.Point(12, 471);
+            this.bt_thoat.Name = "bt_thoat";
+            this.bt_thoat.Size = new System.Drawing.Size(75, 33);
+            this.bt_thoat.TabIndex = 31;
+            this.bt_thoat.Text = "Thoát";
+            this.bt_thoat.UseVisualStyleBackColor = true;
             // 
             // QuanLySP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(784, 424);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(784, 516);
+            this.Controls.Add(this.bt_thoat);
+            this.Controls.Add(this.lb_xinchao);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "QuanLySP";
             this.Text = "Quản lý sản phẩm";
             this.Load += new System.EventHandler(this.QuanLySP_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataDSSP)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_xinchao;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dataDSSP;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.TextBox txt_timkiem;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.ComboBox cbb_hang;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button bt_edit;
+        private System.Windows.Forms.Button bt_add;
+        private System.Windows.Forms.Button bt_delete;
+        private System.Windows.Forms.Button bt_thoat;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenSP;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThongTin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HinhAnh;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayNhap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
     }
 }
