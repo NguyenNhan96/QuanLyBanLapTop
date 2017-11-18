@@ -58,6 +58,7 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DBConnecter.cs" />
     <Compile Include="QLBanHang.cs">
       <SubType>Form</SubType>
     </Compile>

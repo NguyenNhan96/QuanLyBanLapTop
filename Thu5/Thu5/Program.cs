@@ -16,7 +16,7 @@ namespace Thu5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLBanHang());
+            Application.Run(new DangNhap());
         }
     }
 }
