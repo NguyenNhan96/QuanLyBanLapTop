@@ -37,20 +37,14 @@
             this.bt_add = new System.Windows.Forms.Button();
             this.bt_delete = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
+            this.bt_timkiem = new System.Windows.Forms.Button();
             this.cbb_hang = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bt_thoat = new System.Windows.Forms.Button();
-            this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.data_DSSP = new System.Windows.Forms.DataGridView();
-            this.MASP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TENHANGSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NGAYNHAP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MOTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SOLUONG = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TINHTRANG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bt_thoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,7 +113,7 @@
             this.bt_edit.Size = new System.Drawing.Size(28, 26);
             this.bt_edit.TabIndex = 15;
             this.bt_edit.UseVisualStyleBackColor = true;
-            this.bt_edit.Click += new System.EventHandler(this.bt_edit_Click);
+            this.bt_edit.Click += new System.EventHandler(this.bt_edit_Click_1);
             // 
             // bt_add
             // 
@@ -145,8 +139,10 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.txt_timkiem);
-            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.bt_timkiem);
             this.panel3.Controls.Add(this.cbb_hang);
             this.panel3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.panel3.Location = new System.Drawing.Point(6, 14);
@@ -154,30 +150,54 @@
             this.panel3.Size = new System.Drawing.Size(400, 38);
             this.panel3.TabIndex = 29;
             // 
-            // button5
+            // label3
             // 
-            this.button5.BackgroundImage = global::Thu5.Properties.Resources.if_system_search_118797;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(356, 6);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(31, 26);
-            this.button5.TabIndex = 26;
-            this.button5.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(226, 2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Hãng:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 2);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 13);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Nhập tên sản phẩm cần tìm kiếm:";
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_timkiem.Location = new System.Drawing.Point(3, 16);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(220, 20);
+            this.txt_timkiem.TabIndex = 28;
+            this.txt_timkiem.Tag = "Nhập tên sản phẩm cần tìm kiếm";
+            // 
+            // bt_timkiem
+            // 
+            this.bt_timkiem.BackgroundImage = global::Thu5.Properties.Resources.if_system_search_118797;
+            this.bt_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bt_timkiem.Location = new System.Drawing.Point(356, 12);
+            this.bt_timkiem.Name = "bt_timkiem";
+            this.bt_timkiem.Size = new System.Drawing.Size(31, 26);
+            this.bt_timkiem.TabIndex = 26;
+            this.bt_timkiem.UseVisualStyleBackColor = true;
+            this.bt_timkiem.Click += new System.EventHandler(this.bt_timkiem_Click_1);
             // 
             // cbb_hang
             // 
             this.cbb_hang.Cursor = System.Windows.Forms.Cursors.Default;
             this.cbb_hang.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.cbb_hang.FormattingEnabled = true;
-            this.cbb_hang.Items.AddRange(new object[] {
-            "Asus",
-            "Dell",
-            "HP"});
-            this.cbb_hang.Location = new System.Drawing.Point(229, 7);
+            this.cbb_hang.Location = new System.Drawing.Point(229, 15);
             this.cbb_hang.Name = "cbb_hang";
             this.cbb_hang.Size = new System.Drawing.Size(121, 21);
             this.cbb_hang.TabIndex = 25;
-            this.cbb_hang.Text = "Hãng";
             // 
             // groupBox2
             // 
@@ -189,6 +209,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách nhân viên: ";
             // 
+            // data_DSSP
+            // 
+            this.data_DSSP.AllowUserToAddRows = false;
+            this.data_DSSP.AllowUserToDeleteRows = false;
+            this.data_DSSP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.data_DSSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_DSSP.Location = new System.Drawing.Point(9, 17);
+            this.data_DSSP.Name = "data_DSSP";
+            this.data_DSSP.ReadOnly = true;
+            this.data_DSSP.Size = new System.Drawing.Size(729, 296);
+            this.data_DSSP.TabIndex = 0;
+            // 
             // bt_thoat
             // 
             this.bt_thoat.Location = new System.Drawing.Point(12, 471);
@@ -198,84 +230,6 @@
             this.bt_thoat.Text = "Thoát";
             this.bt_thoat.UseVisualStyleBackColor = true;
             this.bt_thoat.Click += new System.EventHandler(this.bt_thoat_Click);
-            // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_timkiem.Location = new System.Drawing.Point(3, 7);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(220, 20);
-            this.txt_timkiem.TabIndex = 28;
-            this.txt_timkiem.Text = "Nhập tên sản phẩm cần tìm kiếm";
-            // 
-            // data_DSSP
-            // 
-            this.data_DSSP.AllowUserToAddRows = false;
-            this.data_DSSP.AllowUserToDeleteRows = false;
-            this.data_DSSP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.data_DSSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_DSSP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MASP,
-            this.TENSP,
-            this.TENHANGSX,
-            this.GIA,
-            this.NGAYNHAP,
-            this.MOTA,
-            this.SOLUONG,
-            this.TINHTRANG});
-            this.data_DSSP.Location = new System.Drawing.Point(9, 17);
-            this.data_DSSP.Name = "data_DSSP";
-            this.data_DSSP.ReadOnly = true;
-            this.data_DSSP.Size = new System.Drawing.Size(729, 296);
-            this.data_DSSP.TabIndex = 0;
-            // 
-            // MASP
-            // 
-            this.MASP.DataPropertyName = "MASP";
-            this.MASP.HeaderText = "Mã SP";
-            this.MASP.Name = "MASP";
-            // 
-            // TENSP
-            // 
-            this.TENSP.DataPropertyName = "TENSP";
-            this.TENSP.HeaderText = "Tên SP";
-            this.TENSP.Name = "TENSP";
-            // 
-            // TENHANGSX
-            // 
-            this.TENHANGSX.DataPropertyName = "TENHANGSX";
-            this.TENHANGSX.HeaderText = "Hãng";
-            this.TENHANGSX.Name = "TENHANGSX";
-            // 
-            // GIA
-            // 
-            this.GIA.DataPropertyName = "GIA";
-            this.GIA.HeaderText = "Đơn giá";
-            this.GIA.Name = "GIA";
-            // 
-            // NGAYNHAP
-            // 
-            this.NGAYNHAP.DataPropertyName = "NGAYNHAP";
-            this.NGAYNHAP.HeaderText = "Ngày nhập";
-            this.NGAYNHAP.Name = "NGAYNHAP";
-            // 
-            // MOTA
-            // 
-            this.MOTA.DataPropertyName = "MOTA";
-            this.MOTA.HeaderText = "Mô tả";
-            this.MOTA.Name = "MOTA";
-            // 
-            // SOLUONG
-            // 
-            this.SOLUONG.DataPropertyName = "SOLUONG";
-            this.SOLUONG.HeaderText = "Số lượng";
-            this.SOLUONG.Name = "SOLUONG";
-            // 
-            // TINHTRANG
-            // 
-            this.TINHTRANG.DataPropertyName = "TINHTRANG";
-            this.TINHTRANG.HeaderText = "Tình trạng";
-            this.TINHTRANG.Name = "TINHTRANG";
             // 
             // QuanLySP
             // 
@@ -309,7 +263,7 @@
         private System.Windows.Forms.Label lb_xinchao;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button bt_timkiem;
         private System.Windows.Forms.ComboBox cbb_hang;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel2;
@@ -319,13 +273,7 @@
         private System.Windows.Forms.Button bt_thoat;
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.DataGridView data_DSSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MASP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TENSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TENHANGSX;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GIA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NGAYNHAP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MOTA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SOLUONG;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TINHTRANG;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

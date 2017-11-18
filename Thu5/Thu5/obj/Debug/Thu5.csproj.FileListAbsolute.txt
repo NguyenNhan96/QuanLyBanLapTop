@@ -52,7 +52,6 @@ C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.QLBanHan
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.DangKy.resources
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.GioHang.resources
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.Properties.Resources.resources
-C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.QL_xem_chi_tiet_SP.resources
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.QuanLySP.resources
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.Sua_thong_tin_SP.resources
 C:\Users\TRANTRAM\Source\Repos\QuanLyBanLapTop\Thu5\Thu5\obj\Debug\Thu5.Them_SP.resources

@@ -56,7 +56,7 @@
             this.btnDangNhap.Location = new System.Drawing.Point(109, 264);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(140, 33);
-            this.btnDangNhap.TabIndex = 28;
+            this.btnDangNhap.TabIndex = 4;
             this.btnDangNhap.Text = "Login";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -113,7 +113,7 @@
             this.txtTenDangNhap.ForeColor = System.Drawing.Color.Silver;
             this.txtTenDangNhap.Location = new System.Drawing.Point(44, 13);
             this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(180, 17);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(260, 17);
             this.txtTenDangNhap.TabIndex = 1;
             this.txtTenDangNhap.Tag = "Username";
             this.txtTenDangNhap.Text = "Username";
@@ -128,7 +128,7 @@
             this.txtMatKhau.ForeColor = System.Drawing.Color.Silver;
             this.txtMatKhau.Location = new System.Drawing.Point(44, 63);
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(180, 17);
+            this.txtMatKhau.Size = new System.Drawing.Size(260, 17);
             this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.Tag = "Password";
             this.txtMatKhau.Text = "Password";
@@ -144,7 +144,7 @@
             this.chkShow.Location = new System.Drawing.Point(220, 212);
             this.chkShow.Name = "chkShow";
             this.chkShow.Size = new System.Drawing.Size(126, 21);
-            this.chkShow.TabIndex = 31;
+            this.chkShow.TabIndex = 3;
             this.chkShow.Text = "Show Password";
             this.chkShow.UseVisualStyleBackColor = true;
             // 
@@ -178,7 +178,7 @@
             this.linkLabel1.Location = new System.Drawing.Point(86, 316);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(203, 13);
-            this.linkLabel1.TabIndex = 33;
+            this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Bạn chưa có tài khoản? Vui lòng đăng kí";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -204,7 +204,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "DangNhap";
-            this.Text = "DangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.DangNhap_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

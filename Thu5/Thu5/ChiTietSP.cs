@@ -28,5 +28,16 @@ namespace Thu5
             GioHang giohang = new GioHang();
             giohang.Show();
         }
+        public ChiTietSP( string tensp, string tenhangsx, int gia, string mota, string tinhtrang)
+            : this()
+        {
+            txt_tensp.Text = tensp; txt_hang.Text = tenhangsx;
+            txt_gia.Text = gia.ToString();
+            txt_mota.Text = mota; txt_tinhtrang.Text = tinhtrang;
+        }
+        private void ChiTietSP_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

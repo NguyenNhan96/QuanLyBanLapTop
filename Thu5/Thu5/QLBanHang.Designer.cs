@@ -36,16 +36,17 @@
             this.bt_thoat = new System.Windows.Forms.Button();
             this.gb_ds_sp = new System.Windows.Forms.GroupBox();
             this.data_DSSP = new System.Windows.Forms.DataGridView();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_timkiem = new System.Windows.Forms.TextBox();
-            this.bt_timkiem = new System.Windows.Forms.Button();
-            this.cbb_hang = new System.Windows.Forms.ComboBox();
-            this.lb_xinchao = new System.Windows.Forms.Label();
             this.TENSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TENHANGSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GIA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MOTA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TINHTRANG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
+            this.bt_timkiem = new System.Windows.Forms.Button();
+            this.cbb_hang = new System.Windows.Forms.ComboBox();
+            this.lb_xinchao = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.gb_ds_sp.SuspendLayout();
@@ -79,7 +80,7 @@
             this.groupBox1.Controls.Add(this.bt_thoat);
             this.groupBox1.Controls.Add(this.gb_ds_sp);
             this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Location = new System.Drawing.Point(17, 74);
+            this.groupBox1.Location = new System.Drawing.Point(14, 74);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(655, 415);
             this.groupBox1.TabIndex = 1;
@@ -119,9 +120,9 @@
             // gb_ds_sp
             // 
             this.gb_ds_sp.Controls.Add(this.data_DSSP);
-            this.gb_ds_sp.Location = new System.Drawing.Point(9, 54);
+            this.gb_ds_sp.Location = new System.Drawing.Point(9, 70);
             this.gb_ds_sp.Name = "gb_ds_sp";
-            this.gb_ds_sp.Size = new System.Drawing.Size(640, 314);
+            this.gb_ds_sp.Size = new System.Drawing.Size(640, 298);
             this.gb_ds_sp.TabIndex = 6;
             this.gb_ds_sp.TabStop = false;
             this.gb_ds_sp.Text = "Danh sách sản phẩm:";
@@ -142,62 +143,6 @@
             this.data_DSSP.ReadOnly = true;
             this.data_DSSP.Size = new System.Drawing.Size(628, 289);
             this.data_DSSP.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.txt_timkiem);
-            this.panel3.Controls.Add(this.bt_timkiem);
-            this.panel3.Controls.Add(this.cbb_hang);
-            this.panel3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.panel3.Location = new System.Drawing.Point(9, 14);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(393, 33);
-            this.panel3.TabIndex = 5;
-            // 
-            // txt_timkiem
-            // 
-            this.txt_timkiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txt_timkiem.Location = new System.Drawing.Point(3, 8);
-            this.txt_timkiem.Name = "txt_timkiem";
-            this.txt_timkiem.Size = new System.Drawing.Size(220, 20);
-            this.txt_timkiem.TabIndex = 27;
-            this.txt_timkiem.Text = "Nhập tên sản phẩm cần tìm kiếm";
-            // 
-            // bt_timkiem
-            // 
-            this.bt_timkiem.BackgroundImage = global::Thu5.Properties.Resources.if_system_search_118797;
-            this.bt_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.bt_timkiem.Location = new System.Drawing.Point(356, 6);
-            this.bt_timkiem.Name = "bt_timkiem";
-            this.bt_timkiem.Size = new System.Drawing.Size(31, 23);
-            this.bt_timkiem.TabIndex = 26;
-            this.bt_timkiem.UseVisualStyleBackColor = true;
-            // 
-            // cbb_hang
-            // 
-            this.cbb_hang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cbb_hang.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.cbb_hang.FormattingEnabled = true;
-            this.cbb_hang.Items.AddRange(new object[] {
-            "Asus",
-            "Dell",
-            "HP"});
-            this.cbb_hang.Location = new System.Drawing.Point(229, 7);
-            this.cbb_hang.Name = "cbb_hang";
-            this.cbb_hang.Size = new System.Drawing.Size(121, 21);
-            this.cbb_hang.TabIndex = 25;
-            this.cbb_hang.Text = "Hãng";
-            // 
-            // lb_xinchao
-            // 
-            this.lb_xinchao.AutoSize = true;
-            this.lb_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_xinchao.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lb_xinchao.Location = new System.Drawing.Point(453, 55);
-            this.lb_xinchao.Name = "lb_xinchao";
-            this.lb_xinchao.Size = new System.Drawing.Size(94, 16);
-            this.lb_xinchao.TabIndex = 2;
-            this.lb_xinchao.Text = "Xin chào user !";
             // 
             // TENSP
             // 
@@ -235,6 +180,72 @@
             this.TINHTRANG.HeaderText = "Tình trạng";
             this.TINHTRANG.Name = "TINHTRANG";
             this.TINHTRANG.ReadOnly = true;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.txt_timkiem);
+            this.panel3.Controls.Add(this.bt_timkiem);
+            this.panel3.Controls.Add(this.cbb_hang);
+            this.panel3.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.panel3.Location = new System.Drawing.Point(15, 17);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(400, 38);
+            this.panel3.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(3, 1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(165, 13);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "Nhập tên sản phẩm cần tìm kiếm:";
+            // 
+            // txt_timkiem
+            // 
+            this.txt_timkiem.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txt_timkiem.Location = new System.Drawing.Point(3, 16);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(220, 20);
+            this.txt_timkiem.TabIndex = 27;
+            this.txt_timkiem.Tag = "Nhập tên sản phẩm cần tìm kiếm";
+            // 
+            // bt_timkiem
+            // 
+            this.bt_timkiem.BackgroundImage = global::Thu5.Properties.Resources.if_system_search_118797;
+            this.bt_timkiem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.bt_timkiem.Location = new System.Drawing.Point(356, 14);
+            this.bt_timkiem.Name = "bt_timkiem";
+            this.bt_timkiem.Size = new System.Drawing.Size(31, 23);
+            this.bt_timkiem.TabIndex = 26;
+            this.bt_timkiem.UseVisualStyleBackColor = true;
+            this.bt_timkiem.Click += new System.EventHandler(this.bt_timkiem_Click);
+            // 
+            // cbb_hang
+            // 
+            this.cbb_hang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbb_hang.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cbb_hang.FormattingEnabled = true;
+            this.cbb_hang.Items.AddRange(new object[] {
+            "Hãng"});
+            this.cbb_hang.Location = new System.Drawing.Point(229, 15);
+            this.cbb_hang.Name = "cbb_hang";
+            this.cbb_hang.Size = new System.Drawing.Size(121, 21);
+            this.cbb_hang.TabIndex = 25;
+            this.cbb_hang.Text = "Hãng";
+            // 
+            // lb_xinchao
+            // 
+            this.lb_xinchao.AutoSize = true;
+            this.lb_xinchao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_xinchao.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lb_xinchao.Location = new System.Drawing.Point(453, 55);
+            this.lb_xinchao.Name = "lb_xinchao";
+            this.lb_xinchao.Size = new System.Drawing.Size(94, 16);
+            this.lb_xinchao.TabIndex = 2;
+            this.lb_xinchao.Text = "Xin chào user !";
             // 
             // QLBanHang
             // 
@@ -279,6 +290,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn GIA;
         private System.Windows.Forms.DataGridViewTextBoxColumn MOTA;
         private System.Windows.Forms.DataGridViewTextBoxColumn TINHTRANG;
+        private System.Windows.Forms.Label label2;
     }
 }
 

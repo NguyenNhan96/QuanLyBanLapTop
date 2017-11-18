@@ -31,14 +31,16 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_tensp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_hang = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_gia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_mota = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_tinhtrang = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             // 
             this.button1.BackgroundImage = global::Thu5.Properties.Resources.if_meanicons_59_197222;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(290, 241);
+            this.button1.Location = new System.Drawing.Point(250, 247);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 33);
             this.button1.TabIndex = 14;
@@ -55,7 +57,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 244);
+            this.button2.Location = new System.Drawing.Point(12, 247);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 30);
             this.button2.TabIndex = 1;
@@ -72,93 +74,113 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên sản phẩm:";
             // 
-            // textBox1
+            // txt_tensp
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(162, 20);
-            this.textBox1.TabIndex = 1;
+            this.txt_tensp.Location = new System.Drawing.Point(90, 19);
+            this.txt_tensp.Name = "txt_tensp";
+            this.txt_tensp.ReadOnly = true;
+            this.txt_tensp.Size = new System.Drawing.Size(162, 20);
+            this.txt_tensp.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 56);
+            this.label2.Location = new System.Drawing.Point(6, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Hãng:";
             // 
-            // textBox2
+            // txt_hang
             // 
-            this.textBox2.Location = new System.Drawing.Point(90, 49);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(96, 20);
-            this.textBox2.TabIndex = 3;
+            this.txt_hang.Location = new System.Drawing.Point(90, 45);
+            this.txt_hang.Name = "txt_hang";
+            this.txt_hang.ReadOnly = true;
+            this.txt_hang.Size = new System.Drawing.Size(96, 20);
+            this.txt_hang.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 86);
+            this.label3.Location = new System.Drawing.Point(6, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Đơn giá:";
             // 
-            // textBox3
+            // txt_gia
             // 
-            this.textBox3.Location = new System.Drawing.Point(90, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(162, 20);
-            this.textBox3.TabIndex = 5;
+            this.txt_gia.Location = new System.Drawing.Point(90, 97);
+            this.txt_gia.Name = "txt_gia";
+            this.txt_gia.ReadOnly = true;
+            this.txt_gia.Size = new System.Drawing.Size(162, 20);
+            this.txt_gia.TabIndex = 5;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 117);
+            this.label4.Location = new System.Drawing.Point(6, 130);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Mô tả:";
             // 
-            // textBox4
+            // txt_mota
             // 
-            this.textBox4.Location = new System.Drawing.Point(90, 110);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(263, 91);
-            this.textBox4.TabIndex = 7;
+            this.txt_mota.Location = new System.Drawing.Point(90, 123);
+            this.txt_mota.Multiline = true;
+            this.txt_mota.Name = "txt_mota";
+            this.txt_mota.ReadOnly = true;
+            this.txt_mota.Size = new System.Drawing.Size(263, 91);
+            this.txt_mota.TabIndex = 7;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.txt_tinhtrang);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.txt_mota);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.txt_gia);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txt_hang);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_tensp);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 19);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(408, 219);
+            this.groupBox1.Size = new System.Drawing.Size(368, 222);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin sản phẩm:";
+            // 
+            // txt_tinhtrang
+            // 
+            this.txt_tinhtrang.Location = new System.Drawing.Point(90, 71);
+            this.txt_tinhtrang.Name = "txt_tinhtrang";
+            this.txt_tinhtrang.ReadOnly = true;
+            this.txt_tinhtrang.Size = new System.Drawing.Size(96, 20);
+            this.txt_tinhtrang.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 78);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Tình trạng:";
             // 
             // ChiTietSP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 280);
+            this.ClientSize = new System.Drawing.Size(394, 292);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Name = "ChiTietSP";
             this.Text = "Thông tin sản phẩm";
+            this.Load += new System.EventHandler(this.ChiTietSP_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -170,13 +192,15 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_tensp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_hang;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_gia;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_mota;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txt_tinhtrang;
+        private System.Windows.Forms.Label label5;
     }
 }
